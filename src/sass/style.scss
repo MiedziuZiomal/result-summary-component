@@ -1,0 +1,135 @@
+// @use './_desktop';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: sans-serif;
+}
+.card {
+    max-height: 800px;
+	max-width: 400px;
+	background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	color: #fff;
+	&__top-text {
+		padding: 30px 0;
+		font-weight: normal;
+		color: rgba(255, 255, 255, 0.669);
+	}
+	&__points {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		height: 100px;
+		width: 100px;
+		background: linear-gradient(
+			200deg,
+			hsla(256, 72%, 46%, 1),
+			hsla(241, 72%, 46%, 0)
+		);
+		border-radius: 50%;
+	}
+	&__score {
+		color: rgba(255, 255, 255, 0.274);
+		span {
+			display: block;
+			font-size: 40px;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+	h2 {
+		margin-top: 20px;
+	}
+	&__text {
+		padding: 10px 20px 20px;
+		color: rgba(255, 255, 255, 0.611);
+		text-align: center;
+	}
+}
+.summary {
+	padding: 20px;
+    [class *= 'text'] {
+        position: absolute;
+        left: 10%;
+    }
+	.element {
+        position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 20px auto;
+		padding: 25px 10px;
+		width: 100%;
+		height: 40px;
+		border-radius: 5px;
+	}
+	.reaction {
+		background-color: hsla(0, 100%, 67%, 0.059);
+		.one {
+			color: hsl(0, 100%, 67%);
+		}
+		&__text {
+			color: hsl(0, 100%, 67%);
+			font-weight: bold;
+		}
+	}
+	.memory {
+		background-color: hsla(39, 100%, 56%, 0.097);
+		&__text {
+			color: hsla(39, 100%, 56%);
+			font-weight: bold;
+		}
+	}
+	.verbal {
+		background-color: hsla(166, 100%, 37%, 0.104);
+		&__text {
+			color: hsla(166, 100%, 37%);
+			font-weight: bold;
+		}
+	}
+	.visual {
+		background-color: hsla(234, 85%, 45%, 0.11);
+		&__text {
+			color: hsla(234, 85%, 45%);
+			font-weight: bold;
+		}
+	}
+	.two {
+		color: rgb(185, 181, 181);
+		b {
+			color: rgba(19, 18, 18, 0.748);
+		}
+	}
+	&__button {
+		padding: 15px;
+		width: 100%;
+		border-radius: 25px;
+		background-color: hsl(224, 30%, 27%);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		transition: background .6s;
+        &:hover {
+            background-color: #342feb;
+        }
+	}
+}
+
+
